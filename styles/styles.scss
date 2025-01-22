@@ -65,154 +65,6 @@ body {
   }
 
   .es-kv {
-    background: #fff;
-    &__images {
-      padding: 0 16px;
-      padding-top: 37px;
-      padding-bottom: 45px;
-      background-color: #112c5b;
-    }
-    &__logo {
-      margin-bottom: 20px;
-      opacity: 0;
-      animation: slidedown 0.6s ease forwards;
-    }
-    &__claim {
-      margin-top: 30px;
-      opacity: 0;
-      animation: slidedown 0.6s ease forwards;
-      animation-delay: 0.3s;
-    }
-    &__packshot {
-      opacity: 0;
-      animation: slidedown 0.6s ease forwards;
-      animation-delay: 0.6s;
-    }
-    &__disc-wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      column-gap: 5px;
-    }
-    &__disc,
-    &__claim-text {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      @include text;
-      font-family: $regular;
-      font-size: 16px;
-      text-align: left;
-      text-transform: uppercase;
-      color: #fff;
-      & span {
-        font-weight: 700;
-      }
-      & sup {
-        font-size: 16px;
-        vertical-align: super;
-      }
-
-      &--sup {
-        font-size: 12px !important;
-      }
-
-      &--red {
-        display: inline-block;
-        @include text;
-        margin: 0 auto;
-        margin-bottom: 10px;
-        padding: 3px 22px;
-        background: #e03e2f;
-        text-align: center;
-      }
-    }
-    &__claim-text {
-      margin-top: 20px;
-      text-align: center;
-    }
-    &__photo {
-      position: relative;
-    }
-    &__img {
-      @include img;
-      &--photo {
-        width: 100%;
-        object-fit: cover;
-      }
-    }
-    &__img-packshot {
-      max-width: 105%;
-      object-fit: contain;
-    }
-    &__title-img {
-      @include img;
-      max-width: 80%;
-      margin-left: -8px;
-    }
-    &__content {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      background: url('../images/photo.jpg') center / cover no-repeat;
-      padding-top: 45px;
-      display: flex;
-      justify-content: flex-end;
-      align-items: flex-start;
-      min-height: 420px;
-      padding-bottom: 30px;
-    }
-    &__img-sign {
-      position: absolute;
-      right: 3%;
-      bottom: 8%;
-      width: 46%;
-      max-width: 100%;
-    }
-    &__title {
-      @include text;
-      font-family: $regular;
-      font-weight: 500;
-      padding: 5px 24px;
-      padding-left: 12px;
-      color: #fff;
-      text-transform: uppercase;
-      font-size: 14px;
-      text-align: left;
-      opacity: 0;
-      animation: slideright 0.6s ease forwards;
-      animation-delay: 0.9s;
-
-      &--large {
-        font-size: 35px;
-      }
-
-      & sup {
-        vertical-align: top;
-        font-size: 12px;
-      }
-    }
-    &__subtitle {
-      @include text;
-      font-family: $regular;
-      font-weight: 500;
-      padding: 5px 24px;
-      padding-left: 12px;
-      color: #fff;
-      text-transform: uppercase;
-      font-size: 14px;
-      text-align: left;
-      opacity: 0;
-      animation: slideright 0.6s ease forwards;
-      animation-delay: 0.9s;
-      line-height: 1.4;
-
-      & sup {
-        vertical-align: top;
-        font-size: 12px;
-      }
-    }
   }
 
   .slick-button-prev {
@@ -381,7 +233,8 @@ body {
       }
 
       .acc-tab.active:before {
-        background: url(./../images/minus.png) 50% 50% no-repeat;
+        background: url(./../images/plus.png) 50% 50% no-repeat;
+        transform: rotate(180deg);
       }
 
       & > div:last-of-type {
@@ -510,6 +363,7 @@ body {
 
     &__type,
     &__problem,
+    &__action,
     &__effect,
     &__consistency {
       margin-bottom: 10px;
@@ -517,6 +371,7 @@ body {
 
     &__type-title,
     &__problem-title,
+    &__action-title,
     &__effect-title,
     &__consistency-title {
       @include text;
@@ -536,6 +391,7 @@ body {
 
     &__type-subtitle,
     &__problem-subtitle,
+    &__action-subtitle,
     &__effect-subtitle,
     &__consistency-subtitle {
       @include text;
@@ -662,34 +518,6 @@ body {
   }
 
   @media screen and (min-width: 1200px) {
-    .es-kv {
-      &__content {
-        min-height: 625px;
-      }
-      &__logo {
-        img {
-          max-width: 80%;
-        }
-      }
-      &__images {
-        justify-content: flex-start;
-        padding-bottom: 20px;
-      }
-      &__disc-wrapper {
-        margin-top: -15px;
-        z-index: 1;
-      }
-      &__disc,
-      &__claim-text {
-        margin-top: -15px;
-        & span {
-          font-weight: 600;
-          font-size: 19px;
-          line-height: 1;
-        }
-      }
-    }
-
     .es-compare {
       &__mobile-wrapper {
         flex-wrap: nowrap;
@@ -712,6 +540,7 @@ body {
 
       &__type-subtitle,
       &__problem-subtitle,
+      &__action-subtitle,
       &__effect-subtitle,
       &__consistency-subtitle {
         font-size: 13px;
