@@ -55,7 +55,7 @@ body {
     @include text;
     margin-top: 30px;
     font-family: $regular;
-    font-size: 25px;
+    font-size: 20px;
     text-align: left;
     margin-bottom: 32px;
     margin-left: 20px;
@@ -71,8 +71,8 @@ body {
 
     &__title {
       font-family: $regular;
-      font-weight: 500;
-      font-size: 18px;
+      font-weight: 600;
+      font-size: 14px;
       letter-spacing: 0.5em;
       text-transform: uppercase;
       text-align: center;
@@ -84,6 +84,7 @@ body {
     }
 
     &__description {
+      margin-top: 0;
       font-family: $regular;
       font-weight: 900;
       text-align: center;
@@ -100,6 +101,12 @@ body {
       color: $black;
     }
 
+    &__img-logo {
+      @include img;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+
     &__img-photo {
       @include img;
 
@@ -113,13 +120,21 @@ body {
     &__content {
       padding-left: 10px;
       padding-right: 10px;
+      padding-top: 35px;
+      padding-bottom: 5px;
+      margin-bottom: 30px;
+      background: $red;
+      color: $white;
     }
 
     &__title {
+      margin-top: 0;
+
       font-family: $regular;
       font-weight: 400;
-      font-size: 25px;
+      font-size: 20px;
       text-decoration: underline;
+      color: $white;
     }
 
     &__subtitle {
@@ -129,13 +144,16 @@ body {
     }
 
     &__disclaimer {
+      margin-top: 50px;
       font-family: $regular;
       font-weight: 400;
-      font-size: 13px;
+      font-size: 10px;
     }
 
     &__packshot-img {
       @include img;
+      max-width: 25%;
+      margin-bottom: 30px;
     }
 
     &__photo-img {
@@ -170,12 +188,13 @@ body {
     &__subtitle {
       font-family: $regular;
       font-weight: 600;
-      font-size: 25px;
+      font-size: 20px;
       text-align: center;
       color: $red;
     }
 
     &__disclaimer {
+      margin-left: 10px;
       font-family: $regular;
       font-weight: 400;
       font-size: 10px;
@@ -184,10 +203,18 @@ body {
 
   .es-collagen {
     &__title {
+      display: flex;
+      margin-bottom: 0;
+      gap: 5px;
       font-family: $regular;
       font-weight: 600;
-      font-size: 35px;
+      font-size: 20px;
       text-transform: uppercase;
+
+      &--big {
+        margin-top: -5px;
+        font-size: 50px;
+      }
     }
 
     &__photo {
@@ -215,7 +242,7 @@ body {
 
       &--1 {
         top: 4%;
-        left: 38%;
+        left: 42%;
       }
 
       &--2 {
@@ -235,7 +262,8 @@ body {
 
       &--5 {
         top: 44%;
-        left: 75%;
+        left: 76%;
+        right: 2%;
       }
 
       &--6 {
@@ -249,12 +277,12 @@ body {
       }
 
       &--8 {
-        top: 80%;
+        top: 83%;
         left: 62%;
       }
 
       &--9 {
-        top: 85%;
+        top: 87%;
         left: 42%;
       }
 
@@ -322,6 +350,7 @@ body {
     }
 
     &__disclaimer {
+      margin-left: 10px;
       font-family: $regular;
       font-weight: 400;
       font-size: 10px;
@@ -455,8 +484,7 @@ body {
       margin: 0 auto;
       margin-left: 15px;
       margin-bottom: 40px;
-      font-size: 25px;
-      font-weight: 700;
+      font-size: 20px;
       color: inherit;
     }
 
@@ -511,10 +539,10 @@ body {
         content: '';
         display: block;
         position: absolute;
-        width: 50px;
-        height: 100%;
-        top: 0;
-        right: 0;
+        width: 35px;
+        height: 19px;
+        top: 35%;
+        right: 5%;
         background: url(./../images/plus.png) 50% 50% no-repeat;
         color: #fff;
         text-align: center;
@@ -811,7 +839,183 @@ body {
     background: $red !important;
   }
 
-  @media screen and (min-width: 560px) {
+  .es-routine {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &__title {
+      margin-left: 0;
+      margin-bottom: 0;
+    }
+
+    &__disclaimer {
+      margin-bottom: 30px;
+      padding-right: 20px;
+      font-size: 10px;
+    }
+
+    &__steps {
+      margin-bottom: 50px;
+    }
+
+    &__steps-image {
+      @include img;
+    }
+
+    &__step-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+
+      &--first {
+        justify-content: flex-start;
+      }
+    }
+
+    &__step-item-title {
+      @include text;
+      margin-bottom: 15px;
+      display: inline-block;
+      padding-left: 5px;
+      padding-right: 5px;
+      background: $black;
+      font-family: $regular;
+      font-weight: 600;
+      font-size: 18px;
+      text-transform: uppercase;
+      color: $white;
+
+      &--big {
+        @include text;
+        font-family: $regular;
+        font-weight: 500;
+        font-size: 70px;
+        text-transform: uppercase;
+      }
+    }
+
+    &__step-item-title-group {
+      display: flex;
+      justify-items: center;
+      align-items: flex-end;
+      gap: 10px;
+    }
+
+    &__step-item-subtitle {
+      @include text;
+      margin-top: -15px;
+      font-weight: 500;
+      font-size: 16px;
+      text-transform: uppercase;
+      color: $black;
+    }
+
+    &__button {
+      align-self: flex-end;
+      min-width: 120px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-family: $regular;
+      font-weight: 600;
+      font-size: 14px;
+      text-transform: uppercase;
+      text-align: center;
+      background: $red;
+      color: $white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    &__step-text-content {
+      // display: flex;
+    }
+  }
+
+  @media screen and (min-width: 576px) {
+    .es-collagen {
+      &__item {
+        font-size: 14px;
+        &--1 {
+          top: 1%;
+          left: 43%;
+        }
+
+        &--2 {
+          top: 5%;
+          left: 62%;
+        }
+
+        &--3 {
+          top: 15%;
+          left: 73%;
+        }
+
+        &--4 {
+          top: 28%;
+          left: 82%;
+        }
+
+        &--5 {
+          top: 43%;
+          left: 84%;
+          right: 11%;
+        }
+
+        &--6 {
+          top: 61%;
+          left: 82%;
+        }
+
+        &--7 {
+          top: 75%;
+          left: 73%;
+        }
+
+        &--8 {
+          top: 85%;
+          left: 60%;
+        }
+
+        &--9 {
+          top: 89%;
+          left: 44%;
+        }
+
+        &--10 {
+          top: 86%;
+          left: 29%;
+        }
+
+        &--11 {
+          top: 75%;
+          left: 12%;
+        }
+
+        &--12 {
+          top: 62%;
+          left: 6%;
+        }
+
+        &--13 {
+          top: 46%;
+          left: 8%;
+        }
+
+        &--15 {
+          top: 15%;
+          left: 11%;
+        }
+
+        &--16 {
+          top: 5%;
+          left: 25%;
+        }
+      }
+    }
+
     .es-video {
       &__player {
         &--mobile {
@@ -828,6 +1032,16 @@ body {
         &--desktop {
           display: block;
         }
+      }
+    }
+
+    .es-ba {
+      &__img {
+        max-width: 600px;
+      }
+
+      &__label {
+        right: 5%;
       }
     }
   }
@@ -880,9 +1094,62 @@ body {
   }
 
   @media screen and (min-width: 768px) {
+    .es-header {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      min-height: 200px;
+      background: url(../images/header-image.png) center center no-repeat;
+      background-size: cover;
+      gap: 10px;
+
+      &__right {
+        max-width: 200px;
+      }
+
+      &__title {
+        min-width: 400px;
+      }
+
+      &__description {
+        font-size: 13px;
+      }
+
+      &__img-logo {
+        min-width: 170px;
+      }
+
+      &__img-bg {
+        display: none;
+      }
+    }
+
+    .es-kv {
+      position: relative;
+      min-height: 400px;
+      background: url(../images/kv-photo.png) center center no-repeat;
+      background-size: cover;
+
+      &__content {
+        background-color: unset;
+      }
+
+      &__packshot-img {
+        position: absolute;
+        bottom: 0;
+        left: 45%;
+        max-width: 11%;
+        margin-bottom: 0;
+      }
+
+      &__photo {
+        display: none;
+      }
+    }
+
     .es-title {
       margin-bottom: 50px;
-      font-size: 30px;
+      font-size: 25px;
       text-align: center;
     }
 
