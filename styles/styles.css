@@ -298,6 +298,7 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  padding-left: 20px;
   text-align: left;
 }
 #es-rc #es-rc-content .es-bonding__img {
@@ -539,7 +540,7 @@ body {
   margin-bottom: 40px;
 }
 #es-rc #es-rc-content .es-compare__single {
-  max-width: 150px;
+  max-width: 230px;
 }
 #es-rc #es-rc-content .es-compare__single-image {
   max-width: 100%;
@@ -888,6 +889,27 @@ body {
   #es-rc #es-rc-content .es-ba__label {
     right: 5%;
   }
+  #es-rc #es-rc-content .es-bonding {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+  }
+  #es-rc #es-rc-content .es-bonding__content {
+    padding-left: 10px;
+  }
+  #es-rc #es-rc-content .es-bonding__photo {
+    min-width: 50%;
+  }
+  #es-rc #es-rc-content .es-bonding__title {
+    margin-left: 0;
+    text-align: left;
+  }
+  #es-rc #es-rc-content .es-bonding__description {
+    padding-left: 0;
+  }
 }
 @media screen and (min-width: 600px) {
   #es-rc #es-rc-content .es-slick-carousel--mobile,
@@ -914,6 +936,8 @@ body {
   }
   #es-rc #es-rc-content .es-compare__single {
     min-width: 125px;
+    max-width: -moz-min-content;
+    max-width: min-content;
   }
   #es-rc #es-rc-content .es-compare__single-title {
     min-height: 93px;
@@ -928,7 +952,17 @@ body {
     display: none;
   }
 }
+@media screen and (min-width: 650px) {
+  #es-rc #es-rc-content .es-ba__label {
+    right: 10%;
+  }
+}
 @media screen and (min-width: 768px) {
+  #es-rc #es-rc-content .es-title {
+    margin-bottom: 50px;
+    font-size: 25px;
+    text-align: left;
+  }
   #es-rc #es-rc-content .es-header {
     display: flex;
     justify-content: space-around;
@@ -960,22 +994,84 @@ body {
     background-size: cover;
   }
   #es-rc #es-rc-content .es-kv__content {
+    padding-left: 25px;
+    padding-top: 65px;
     background-color: unset;
+    max-width: 50%;
+  }
+  #es-rc #es-rc-content .es-kv__title {
+    font-size: 21px;
+  }
+  #es-rc #es-rc-content .es-kv__subtitle {
+    max-width: 230px;
+    font-size: 25px;
   }
   #es-rc #es-rc-content .es-kv__packshot-img {
     position: absolute;
     bottom: 0;
     left: 45%;
-    max-width: 11%;
+    max-width: 9%;
     margin-bottom: 0;
   }
   #es-rc #es-rc-content .es-kv__photo {
     display: none;
   }
-  #es-rc #es-rc-content .es-title {
-    margin-bottom: 50px;
-    font-size: 25px;
-    text-align: center;
+  #es-rc #es-rc-content .es-collagen {
+    position: relative;
+  }
+  #es-rc #es-rc-content .es-collagen__title {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 310px;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    color: #ffffff;
+    text-align: left;
+  }
+  #es-rc #es-rc-content .es-collagen__photo {
+    min-height: 600px;
+    padding-top: 100px;
+  }
+  #es-rc #es-rc-content .es-collagen__ba-group {
+    gap: 0;
+    position: absolute;
+    bottom: 14%;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #ffffff;
+  }
+  #es-rc #es-rc-content .es-collagen__after-img {
+    margin: 0;
+  }
+  #es-rc #es-rc-content .es-collagen__disclaimer {
+    position: absolute;
+    bottom: 2%;
+    left: 5%;
+    margin: 0;
+    color: #ffffff;
+  }
+  #es-rc #es-rc-content .es-ba__label {
+    right: 15%;
+  }
+  #es-rc #es-rc-content .es-bonding__title {
+    text-align: left;
+  }
+  #es-rc #es-rc-content .es-formula {
+    background: url(../images/formula-image.png) center center no-repeat;
+    background-size: cover;
+    min-height: 315px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  #es-rc #es-rc-content .es-compare__single {
+    min-width: 125px;
+    max-width: 165px;
   }
   #es-rc #es-rc-content .swiper-pagination {
     display: none;
@@ -995,6 +1091,13 @@ body {
   #es-rc #es-rc-content .es-compare__effect-subtitle {
     min-height: 100px;
   }
+  #es-rc #es-rc-content .es-ba__img {
+    max-width: 830px;
+  }
+  #es-rc #es-rc-content .es-ba__label {
+    font-size: 20px;
+    right: 10%;
+  }
 }
 @media screen and (min-width: 1200px) {
   #es-rc #es-rc-content .es-compare__mobile-wrapper {
@@ -1003,11 +1106,10 @@ body {
     gap: 0;
   }
   #es-rc #es-rc-content .es-compare__single {
-    min-width: 228px;
+    min-width: 240px;
   }
   #es-rc #es-rc-content .es-compare__single-image {
     min-height: 180px;
-    max-width: 170px;
   }
   #es-rc #es-rc-content .es-compare__single-title {
     font-size: 15px;

@@ -365,6 +365,7 @@ body {
       font-family: $regular;
       font-weight: 400;
       font-size: 16px;
+      padding-left: 20px;
       text-align: left;
     }
 
@@ -637,7 +638,7 @@ body {
     }
 
     &__single {
-      max-width: 150px;
+      max-width: 230px;
     }
 
     &__single-image {
@@ -1044,6 +1045,32 @@ body {
         right: 5%;
       }
     }
+
+    .es-bonding {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 5px;
+
+      &__content {
+        padding-left: 10px;
+      }
+
+      &__photo {
+        min-width: 50%;
+      }
+
+      &__title {
+        margin-left: 0;
+        text-align: left;
+      }
+
+      &__description {
+        padding-left: 0;
+      }
+    }
   }
 
   @media screen and (min-width: 600px) {
@@ -1075,6 +1102,7 @@ body {
       }
       &__single {
         min-width: 125px;
+        max-width: min-content;
       }
       &__single-title {
         min-height: 93px;
@@ -1093,7 +1121,20 @@ body {
     }
   }
 
+  @media screen and (min-width: 650px) {
+    .es-ba {
+      &__label {
+        right: 10%;
+      }
+    }
+  }
   @media screen and (min-width: 768px) {
+    .es-title {
+      margin-bottom: 50px;
+      font-size: 25px;
+      text-align: left;
+    }
+
     .es-header {
       display: flex;
       justify-content: space-around;
@@ -1131,14 +1172,26 @@ body {
       background-size: cover;
 
       &__content {
+        padding-left: 25px;
+        padding-top: 65px;
         background-color: unset;
+        max-width: 50%;
+      }
+
+      &__title {
+        font-size: 21px;
+      }
+
+      &__subtitle {
+        max-width: 230px;
+        font-size: 25px;
       }
 
       &__packshot-img {
         position: absolute;
         bottom: 0;
         left: 45%;
-        max-width: 11%;
+        max-width: 9%;
         margin-bottom: 0;
       }
 
@@ -1147,10 +1200,80 @@ body {
       }
     }
 
-    .es-title {
-      margin-bottom: 50px;
-      font-size: 25px;
-      text-align: center;
+    .es-collagen {
+      position: relative;
+
+      &__title {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        max-width: 310px;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        color: $white;
+        text-align: left;
+      }
+
+      &__photo {
+        min-height: 600px;
+        padding-top: 100px;
+      }
+
+      &__ba-group {
+        gap: 0;
+        position: absolute;
+        bottom: 14%;
+        left: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        color: $white;
+      }
+
+      &__after-img {
+        margin: 0;
+      }
+
+      &__disclaimer {
+        position: absolute;
+        bottom: 2%;
+        left: 5%;
+        margin: 0;
+        color: $white;
+      }
+    }
+
+    .es-ba {
+      &__label {
+        right: 15%;
+      }
+    }
+
+    .es-bonding {
+      &__title {
+        text-align: left;
+      }
+    }
+
+    .es-formula {
+      background: url(../images/formula-image.png) center center no-repeat;
+      background-size: cover;
+      min-height: 315px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      &__title {
+      }
+    }
+
+    .es-compare {
+      &__single {
+        min-width: 125px;
+        max-width: 165px;
+      }
     }
 
     .swiper-pagination {
@@ -1174,6 +1297,17 @@ body {
         min-height: 100px;
       }
     }
+
+    .es-ba {
+      &__img {
+        max-width: 830px;
+      }
+
+      &__label {
+        font-size: 20px;
+        right: 10%;
+      }
+    }
   }
 
   @media screen and (min-width: 1200px) {
@@ -1185,12 +1319,11 @@ body {
         gap: 0;
       }
       &__single {
-        min-width: 228px;
+        min-width: 240px;
       }
 
       &__single-image {
         min-height: 180px;
-        max-width: 170px;
       }
 
       &__single-title {
