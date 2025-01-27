@@ -51,6 +51,11 @@ body {
     color: #111;
   }
 
+  sup {
+    font-size: 14px;
+    vertical-align: super;
+  }
+
   .es-title {
     @include text;
     margin-top: 30px;
@@ -81,6 +86,7 @@ body {
 
     &__number-label {
       @include img;
+      margin-bottom: 5px;
     }
 
     &__description {
@@ -183,6 +189,10 @@ body {
       font-size: 12px;
       text-transform: uppercase;
       color: $white;
+
+      &--before {
+        left: 2%;
+      }
     }
 
     &__subtitle {
@@ -1074,6 +1084,10 @@ body {
 
       &__label {
         right: 5%;
+
+        &--before {
+          left: 5%;
+        }
       }
     }
 
@@ -1160,6 +1174,10 @@ body {
     .es-ba {
       &__label {
         right: 10%;
+
+        &--before {
+          left: 10%;
+        }
       }
     }
   }
@@ -1187,6 +1205,7 @@ body {
       }
 
       &__title {
+        margin-top: 0;
         min-width: 400px;
       }
 
@@ -1205,19 +1224,19 @@ body {
 
     .es-kv {
       position: relative;
-      min-height: 400px;
+      min-height: 445px;
       background: url(../images/kv-photo.png) center center no-repeat;
       background-size: cover;
 
       &__content {
-        padding-left: 25px;
-        padding-top: 65px;
+        padding-left: 35px;
+        padding-top: 76px;
         background-color: unset;
         max-width: 50%;
       }
 
       &__title {
-        font-size: 21px;
+        font-size: 26px;
       }
 
       &__subtitle {
@@ -1258,7 +1277,7 @@ body {
       }
 
       &__photo {
-        min-height: 600px;
+        min-height: 580px;
         padding-top: 140px;
         padding-bottom: 100px;
       }
@@ -1376,8 +1395,25 @@ body {
     }
 
     .es-ba {
+      &__title {
+        margin-top: 50px;
+      }
+
+      &__subtitle {
+        font-size: 25px;
+      }
+
+      &__disclaimer {
+        margin-top: 45px;
+        margin-bottom: 25px;
+      }
+
       &__label {
         right: 15%;
+
+        &--before {
+          left: 15%;
+        }
       }
     }
 
@@ -1531,6 +1567,10 @@ body {
       &__label {
         font-size: 20px;
         right: 10%;
+
+        &--before {
+          left: 10%;
+        }
       }
     }
 
@@ -1542,91 +1582,121 @@ body {
         padding-right: 50px;
       }
     }
+
+    .es-header {
+      &__img-logo {
+        max-width: 165px;
+        padding-top: 16px;
+        padding-left: 24px;
+      }
+    }
   }
 
   @media screen and (min-width: 998px) {
+    .es-kv {
+      &__subtitle {
+        max-width: 250px;
+        font-size: 28px;
+      }
+
+      &__disclaimer {
+        margin-top: 63px;
+      }
+    }
+
     .es-collagen {
+      &__title {
+        left: 22px;
+        &--big {
+          font-size: 58px;
+        }
+      }
+
+      &__image {
+        max-width: 35%;
+      }
+
       &__item {
         font-size: 16px;
         &--1 {
-          top: 12%;
-          left: 43%;
+          top: 14%;
+          left: 44%;
         }
 
         &--2 {
-          top: 17%;
-          left: 60%;
+          top: 18%;
+          left: 58%;
         }
 
         &--3 {
-          top: 25%;
-          left: 68%;
+          top: 26%;
+          left: 65%;
         }
 
         &--4 {
-          top: 36%;
-          left: 73%;
+          top: 35%;
+          left: 70%;
         }
 
         &--5 {
-          top: 50%;
+          top: 48%;
           left: 0;
-          right: 13%;
+          right: 16%;
         }
 
         &--6 {
-          top: 61%;
-          left: 74%;
+          top: 60%;
+          left: 69%;
         }
 
         &--7 {
-          top: 74%;
-          left: 68%;
+          top: 73%;
+          left: 65%;
         }
 
         &--8 {
-          top: 83%;
+          top: 82%;
           left: 58%;
         }
 
         &--9 {
-          top: 88%;
+          top: 85%;
           left: 46%;
         }
 
         &--10 {
-          top: 83%;
-          left: 35%;
+          top: 82%;
+          left: 36%;
         }
 
         &--11 {
-          top: 75%;
-          left: 23%;
+          top: 73%;
+          left: 25%;
         }
 
         &--12 {
-          top: 61%;
-          left: 18%;
+          top: 60%;
+          left: 21%;
         }
 
         &--13 {
-          top: 50%;
-          left: 20%;
+          top: 49%;
+          left: 24%;
         }
 
         &--14 {
           top: 36%;
-          left: 19%;
-        }
-
-        &--15 {
-          top: 24%;
           left: 23%;
         }
 
+        &--15 {
+          top: 26%;
+          left: 26%;
+        }
+
         &--16 {
-          top: 16%;
-          left: 32%;
+          top: 18%;
+          left: 34%;
         }
       }
     }
@@ -1641,6 +1711,7 @@ body {
     .es-header {
       &__right {
         max-width: 260px;
+        margin-right: -10px;
       }
 
       &__title {
@@ -1678,8 +1749,13 @@ body {
 
     .es-collagen {
       &__ba-group {
-        bottom: 7%;
-        left: 5%;
+        bottom: 11%;
+        left: 3%;
+      }
+
+      &__disclaimer {
+        bottom: 4%;
+        left: 3%;
       }
     }
   }
