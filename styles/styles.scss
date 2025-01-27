@@ -371,11 +371,11 @@ body {
     margin-bottom: 30px;
 
     &__description {
-      padding-left: 5px;
       font-family: $regular;
       font-weight: 400;
       font-size: 16px;
       padding-left: 20px;
+      padding-right: 10px;
       text-align: left;
     }
 
@@ -961,7 +961,7 @@ body {
   @media screen and (min-width: 400px) {
     .es-routine {
       &__step {
-        max-width: 360px;
+        max-width: 365px;
         margin: 0 auto;
       }
 

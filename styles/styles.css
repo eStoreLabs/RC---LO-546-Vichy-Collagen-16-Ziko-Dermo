@@ -303,11 +303,11 @@ body {
   margin-bottom: 30px;
 }
 #es-rc #es-rc-content .es-bonding__description {
-  padding-left: 5px;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 16px;
   padding-left: 20px;
+  padding-right: 10px;
   text-align: left;
 }
 #es-rc #es-rc-content .es-bonding__img {
@@ -830,7 +830,7 @@ body {
 }
 @media screen and (min-width: 400px) {
   #es-rc #es-rc-content .es-routine__step {
-    max-width: 360px;
+    max-width: 365px;
     margin: 0 auto;
   }
   #es-rc #es-rc-content .es-routine__step-item {
