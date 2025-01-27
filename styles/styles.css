@@ -73,6 +73,9 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
+#es-rc #es-rc-content .es-header__description sup {
+  vertical-align: top;
+}
 #es-rc #es-rc-content .es-header__description-disclaimer {
   display: block;
   font-family: "Lato", sans-serif;

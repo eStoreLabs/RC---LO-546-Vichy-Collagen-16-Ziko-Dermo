@@ -95,6 +95,10 @@ body {
       font-weight: 900;
       text-align: center;
       text-transform: uppercase;
+
+      & sup {
+        vertical-align: top;
+      }
     }
 
     &__description-disclaimer {
