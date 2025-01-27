@@ -174,6 +174,7 @@ body {
 }
 #es-rc #es-rc-content .es-collagen__title {
   display: flex;
+  align-items: center;
   margin-bottom: 0;
   gap: 5px;
   font-family: "Lato", sans-serif;
@@ -593,7 +594,7 @@ body {
   font-family: inherit;
   font-weight: inherit;
   font-family: "Lato", sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 10px;
   text-align: center;
   min-height: 48px;
@@ -609,7 +610,7 @@ body {
   font-family: inherit;
   font-weight: inherit;
   font-family: "Lato", sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 700;
   padding-top: 18px;
   padding-bottom: 18px;
@@ -640,7 +641,13 @@ body {
   z-index: 0;
 }
 #es-rc #es-rc-content .es-compare__disclaimer {
+  display: block;
   font-size: 8px;
+  max-width: 150px;
+  margin: 0 auto;
+}
+#es-rc #es-rc-content .es-compare__disclaimer sup {
+  vertical-align: baseline;
 }
 #es-rc #es-rc-content .es-compare__effect-subtitle {
   min-height: 120px;
@@ -794,7 +801,7 @@ body {
   font-weight: inherit;
   margin-top: -15px;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 15px;
   text-transform: uppercase;
   color: #000000;
 }
@@ -814,6 +821,12 @@ body {
   color: #ffffff;
   text-decoration: none;
   border-radius: 5px;
+}
+#es-rc #es-rc-content .es-routine__button-d--1 {
+  display: none;
+}
+#es-rc #es-rc-content .es-routine__button-d--2 {
+  display: none;
 }
 @media screen and (min-width: 400px) {
   #es-rc #es-rc-content .es-routine__step {
@@ -990,7 +1003,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   #es-rc #es-rc-content .es-title {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     font-size: 25px;
     text-align: left;
   }
@@ -1176,6 +1189,12 @@ body {
   #es-rc #es-rc-content .es-bonding__title {
     text-align: left;
   }
+  #es-rc #es-rc-content .es-bonding__description {
+    margin-top: -10px;
+    max-width: 80%;
+    font-size: 15px;
+    line-height: 1.5;
+  }
   #es-rc #es-rc-content .es-formula {
     background: url(../images/formula-image.png) center center no-repeat;
     background-size: cover;
@@ -1243,14 +1262,28 @@ body {
     position: absolute;
     bottom: 6%;
     right: 20%;
+    display: none;
   }
   #es-rc #es-rc-content .es-routine__button--2 {
     position: absolute;
     bottom: 6%;
     right: 5%;
+    display: none;
+  }
+  #es-rc #es-rc-content .es-routine__button-d--1 {
+    display: block;
+    position: absolute;
+    bottom: 6%;
+    right: 20%;
+  }
+  #es-rc #es-rc-content .es-routine__button-d--2 {
+    display: block;
+    position: absolute;
+    bottom: 6%;
+    right: 5%;
   }
   #es-rc #es-rc-content .es-faq__title {
-    margin-top: 30px;
+    margin-top: 50px;
   }
   #es-rc #es-rc-content .swiper-pagination {
     display: none;
@@ -1271,6 +1304,7 @@ body {
     min-height: 100px;
   }
   #es-rc #es-rc-content .es-compare__title {
+    margin-top: 50px;
     margin-bottom: 30px;
   }
   #es-rc #es-rc-content .es-ba__img {
@@ -1381,6 +1415,12 @@ body {
     top: 18%;
     left: 34%;
   }
+  #es-rc #es-rc-content .es-routine__title {
+    padding-left: 20px;
+    max-width: 400px;
+    font-size: 25px;
+    line-height: 1.4;
+  }
   #es-rc #es-rc-content .es-routine__step {
     margin-left: 20%;
   }
@@ -1409,7 +1449,9 @@ body {
     margin-bottom: 50px;
   }
   #es-rc #es-rc-content .es-compare__type-subtitle, #es-rc #es-rc-content .es-compare__problem-subtitle, #es-rc #es-rc-content .es-compare__action-subtitle, #es-rc #es-rc-content .es-compare__effect-subtitle, #es-rc #es-rc-content .es-compare__consistency-subtitle {
-    font-size: 13px;
+    font-size: 14px;
+    padding-right: 30px;
+    padding-left: 30px;
   }
   #es-rc #es-rc-content .es-collagen__ba-group {
     bottom: 11%;
@@ -1418,6 +1460,43 @@ body {
   #es-rc #es-rc-content .es-collagen__disclaimer {
     bottom: 4%;
     left: 3%;
+  }
+  #es-rc #es-rc-content .es-routine {
+    position: relative;
+  }
+  #es-rc #es-rc-content .es-routine__step {
+    margin-left: 0;
+    margin-top: 30px;
+    position: absolute;
+    top: 0px;
+    right: 7%;
+    gap: 45px;
+  }
+  #es-rc #es-rc-content .es-routine__step-item-title {
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+  #es-rc #es-rc-content .es-routine__step-item-title--big {
+    font-size: 40px;
+    position: absolute;
+    right: 0;
+    top: -20px;
+  }
+  #es-rc #es-rc-content .es-routine__step-item-title--big-1 {
+    right: -25px;
+  }
+  #es-rc #es-rc-content .es-routine__step-item-title--big-2 {
+    right: 22px;
+  }
+  #es-rc #es-rc-content .es-routine__step-item-title--big-3 {
+    right: 30px;
+  }
+  #es-rc #es-rc-content .es-routine__step-item-subtitle {
+    margin-top: -10px;
+  }
+  #es-rc #es-rc-content .es-routine__step-item-title-group {
+    position: relative;
+    margin-left: 10px;
   }
 }
 @keyframes slidedown {
