@@ -67,6 +67,7 @@ body {
     text-transform: uppercase;
 
     & span {
+      margin-top: -4%;
       font-weight: 700;
     }
   }
@@ -139,18 +140,20 @@ body {
 
     &__title {
       margin-top: 0;
-
       font-family: $regular;
       font-weight: 400;
-      font-size: 20px;
-      text-decoration: underline;
+      font-size: 18px;
       color: $white;
+
+      span {
+        font-weight: 900;
+      }
     }
 
     &__subtitle {
       font-family: $regular;
       font-weight: 600;
-      font-size: 20px;
+      font-size: 15px;
     }
 
     &__disclaimer {
@@ -1240,19 +1243,19 @@ body {
       background-size: cover;
 
       &__content {
-        padding-left: 35px;
+        padding-left: 20px;
         padding-top: 76px;
         background-color: unset;
         max-width: 50%;
       }
 
       &__title {
-        font-size: 26px;
+        font-size: 24px;
       }
 
       &__subtitle {
-        max-width: 230px;
-        font-size: 25px;
+        max-width: 330px;
+        font-size: 17px;
       }
 
       &__packshot-img {
@@ -1279,7 +1282,7 @@ body {
         align-items: center;
         -webkit-box-pack: start;
         justify-content: flex-start;
-        max-width: 310px;
+        max-width: 630px;
         top: 0;
         left: 0;
         z-index: 2;
@@ -1627,9 +1630,20 @@ body {
 
   @media screen and (min-width: 998px) {
     .es-kv {
+      min-height: 470px;
+
+      &__content {
+        max-width: 61%;
+        padding-left: 8px;
+        padding-top: 100px;
+      }
       &__subtitle {
-        max-width: 250px;
-        font-size: 28px;
+        max-width: 350px;
+        font-size: 22px;
+
+        & span {
+          font-weight: 500;
+        }
       }
 
       &__disclaimer {
