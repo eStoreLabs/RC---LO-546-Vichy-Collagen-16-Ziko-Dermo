@@ -116,14 +116,17 @@ body {
   font-weight: 400;
   font-size: 18px;
   color: #ffffff;
+  line-height: 1.3;
 }
 #es-rc #es-rc-content .es-kv__title span {
   font-weight: 900;
 }
 #es-rc #es-rc-content .es-kv__subtitle {
+  margin-top: 40px;
   font-family: "Lato", sans-serif;
   font-weight: 600;
   font-size: 15px;
+  line-height: 1.3;
 }
 #es-rc #es-rc-content .es-kv__disclaimer {
   margin-top: 50px;
@@ -1346,7 +1349,7 @@ body {
     padding-top: 100px;
   }
   #es-rc #es-rc-content .es-kv__subtitle {
-    max-width: 350px;
+    max-width: 365px;
     font-size: 22px;
   }
   #es-rc #es-rc-content .es-kv__subtitle span {
