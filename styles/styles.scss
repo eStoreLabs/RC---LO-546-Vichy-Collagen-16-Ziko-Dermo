@@ -1534,6 +1534,7 @@ body {
         background-color: $white;
         color: $red;
         font-size: 12px;
+        transition: transform 0.5s ease-in-out;
 
         &--1 {
           position: absolute;
@@ -1554,6 +1555,10 @@ body {
           position: absolute;
           bottom: 6%;
           right: 20%;
+
+          &:hover {
+            scale: 1.05;
+          }
         }
 
         &-d--2 {
@@ -1561,6 +1566,10 @@ body {
           position: absolute;
           bottom: 6%;
           right: 5%;
+
+          &:hover {
+            scale: 1.05;
+          }
         }
       }
     }
@@ -1787,6 +1796,11 @@ body {
 
       &__single-image {
         min-height: 180px;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+          scale: 1.05;
+        }
       }
 
       &__single-title {
