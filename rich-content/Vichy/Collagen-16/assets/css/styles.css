@@ -9,7 +9,7 @@ body {
   font-size: 15px;
   font-weight: 500;
   line-height: 1.2;
-  max-width: 980px;
+  max-width: 720px;
   margin: 0 auto;
   padding: 0;
   overflow: hidden;
@@ -199,7 +199,7 @@ body {
   position: relative;
   padding-top: 50px;
   padding-bottom: 50px;
-  background: url(./../images/16-collagen-bg.png) center center no-repeat;
+  background: url(../img/16-collagen-bg.png) center center no-repeat;
   background-size: cover;
 }
 #es-rc #es-rc-content .es-collagen__image {
@@ -484,14 +484,14 @@ body {
   height: 19px;
   top: 35%;
   right: 2%;
-  background: url(./../images/plus.png) 50% 50% no-repeat;
+  background: url(../img/plus.png) 50% 50% no-repeat;
   color: #fff;
   text-align: center;
   line-height: 50px;
   transition: all 200ms ease-out;
 }
 #es-rc #es-rc-content .es-faq .es-accordion .acc-tab.active:before {
-  background: url(./../images/plus.png) 50% 50% no-repeat;
+  background: url(../img/plus.png) 50% 50% no-repeat;
   transform: rotate(180deg);
 }
 #es-rc #es-rc-content .es-faq .es-accordion > div:last-of-type {
@@ -1010,10 +1010,10 @@ body {
     left: 10%;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1241px) {
   #es-rc #es-rc-content .es-title {
     margin-bottom: 40px;
-    font-size: 25px;
+    font-size: 20px;
     text-align: left;
   }
   #es-rc #es-rc-content .es-header {
@@ -1022,7 +1022,7 @@ body {
     justify-content: space-around;
     align-items: center;
     min-height: 200px;
-    background: url(../images/header-image.png) center center no-repeat;
+    background: url(../img/header-image.png) center center no-repeat;
     background-size: cover;
     gap: 10px;
   }
@@ -1031,10 +1031,10 @@ body {
   }
   #es-rc #es-rc-content .es-header__title {
     margin-top: 0;
-    min-width: 400px;
+    min-width: 300px;
   }
   #es-rc #es-rc-content .es-header__description {
-    font-size: 13px;
+    font-size: 12px;
   }
   #es-rc #es-rc-content .es-header__img-logo {
     min-width: 170px;
@@ -1045,7 +1045,7 @@ body {
   #es-rc #es-rc-content .es-kv {
     position: relative;
     min-height: 445px;
-    background: url(../images/kv-photo.png) center center no-repeat;
+    background: url(../img/kv-photo.png) center center no-repeat;
     background-size: cover;
   }
   #es-rc #es-rc-content .es-kv__content {
@@ -1055,7 +1055,7 @@ body {
     max-width: 50%;
   }
   #es-rc #es-rc-content .es-kv__title {
-    font-size: 24px;
+    font-size: 18px;
   }
   #es-rc #es-rc-content .es-kv__subtitle {
     max-width: 330px;
@@ -1065,7 +1065,7 @@ body {
     position: absolute;
     bottom: 0;
     left: 45%;
-    max-width: 9%;
+    max-width: 12%;
     margin-bottom: 0;
   }
   #es-rc #es-rc-content .es-kv__photo {
@@ -1087,12 +1087,12 @@ body {
     text-align: left;
   }
   #es-rc #es-rc-content .es-collagen__photo {
-    min-height: 580px;
+    min-height: 530px;
     padding-top: 140px;
     padding-bottom: 100px;
   }
   #es-rc #es-rc-content .es-collagen__ba-group {
-    gap: 0;
+    gap: 3px;
     position: absolute;
     bottom: 4%;
     left: 5%;
@@ -1205,7 +1205,7 @@ body {
     line-height: 1.5;
   }
   #es-rc #es-rc-content .es-formula {
-    background: url(../images/formula-image.png) center center no-repeat;
+    background: url(../img/formula-image.png) center center no-repeat;
     background-size: cover;
     min-height: 315px;
     display: flex;
@@ -1217,10 +1217,10 @@ body {
     max-width: 165px;
   }
   #es-rc #es-rc-content .es-routine {
-    min-height: 388px;
+    min-height: 340px;
     padding-top: 100px;
     padding-bottom: 100px;
-    background: url(../images/routine-bg.png) center center no-repeat;
+    background: url(../img/routine-bg.png) center center no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -1252,7 +1252,7 @@ body {
   }
   #es-rc #es-rc-content .es-routine__step-item-subtitle {
     color: #ffffff;
-    font-size: 13px;
+    font-size: 10px;
   }
   #es-rc #es-rc-content .es-routine__disclaimer {
     position: absolute;
@@ -1267,6 +1267,8 @@ body {
     color: #bf001a;
     font-size: 12px;
     transition: transform 0.5s ease-in-out;
+    font-size: 10px;
+    min-width: 90px;
   }
   #es-rc #es-rc-content .es-routine__button--1 {
     position: absolute;
@@ -1284,7 +1286,7 @@ body {
     display: block;
     position: absolute;
     bottom: 6%;
-    right: 20%;
+    right: 17%;
   }
   #es-rc #es-rc-content .es-routine__button-d--1:hover {
     scale: 1.05;
@@ -1293,7 +1295,7 @@ body {
     display: block;
     position: absolute;
     bottom: 6%;
-    right: 5%;
+    right: 1%;
   }
   #es-rc #es-rc-content .es-routine__button-d--2:hover {
     scale: 1.05;
@@ -1305,7 +1307,7 @@ body {
     display: none;
   }
 }
-@media screen and (min-width: 860px) {
+@media screen and (min-width: 1241px) {
   #es-rc #es-rc-content .es-compare__mobile-wrapper {
     max-width: none;
     justify-content: space-around;
@@ -1324,7 +1326,7 @@ body {
     margin-bottom: 30px;
   }
   #es-rc #es-rc-content .es-ba__img {
-    max-width: 830px;
+    max-width: 90%;
   }
   #es-rc #es-rc-content .es-ba__label {
     font-size: 20px;
@@ -1334,19 +1336,19 @@ body {
     left: 10%;
   }
   #es-rc #es-rc-content .es-formula {
-    min-height: 400px;
+    min-height: 300px;
   }
   #es-rc #es-rc-content .es-formula__title {
-    font-size: 25px;
+    font-size: 20px;
     padding-right: 50px;
   }
   #es-rc #es-rc-content .es-header__img-logo {
-    max-width: 165px;
+    max-width: 130px;
+    min-width: 130px;
     padding-top: 16px;
-    padding-left: 24px;
   }
 }
-@media screen and (min-width: 998px) {
+@media screen and (min-width: 1241px) {
   #es-rc #es-rc-content .es-kv {
     min-height: 470px;
   }
@@ -1357,7 +1359,7 @@ body {
   }
   #es-rc #es-rc-content .es-kv__subtitle {
     max-width: 365px;
-    font-size: 22px;
+    font-size: 16px;
   }
   #es-rc #es-rc-content .es-kv__subtitle span {
     font-weight: 500;
@@ -1372,7 +1374,7 @@ body {
     font-size: 58px;
   }
   #es-rc #es-rc-content .es-collagen__image {
-    max-width: 35%;
+    max-width: 41%;
   }
   #es-rc #es-rc-content .es-collagen__item {
     font-size: 16px;
@@ -1386,61 +1388,61 @@ body {
     left: 58%;
   }
   #es-rc #es-rc-content .es-collagen__item--3 {
-    top: 26%;
-    left: 65%;
+    top: 25%;
+    left: 68%;
   }
   #es-rc #es-rc-content .es-collagen__item--4 {
     top: 35%;
-    left: 70%;
+    left: 74%;
   }
   #es-rc #es-rc-content .es-collagen__item--5 {
     top: 48%;
     left: 0;
-    right: 16%;
+    right: 8%;
   }
   #es-rc #es-rc-content .es-collagen__item--6 {
     top: 60%;
-    left: 69%;
+    left: 73%;
   }
   #es-rc #es-rc-content .es-collagen__item--7 {
-    top: 73%;
-    left: 65%;
+    top: 71%;
+    left: 68%;
   }
   #es-rc #es-rc-content .es-collagen__item--8 {
-    top: 82%;
-    left: 58%;
+    top: 80%;
+    left: 60%;
   }
   #es-rc #es-rc-content .es-collagen__item--9 {
-    top: 85%;
-    left: 46%;
+    top: 83%;
+    left: 44%;
   }
   #es-rc #es-rc-content .es-collagen__item--10 {
-    top: 82%;
-    left: 36%;
+    top: 78%;
+    left: 32%;
   }
   #es-rc #es-rc-content .es-collagen__item--11 {
-    top: 73%;
-    left: 25%;
+    top: 70%;
+    left: 19%;
   }
   #es-rc #es-rc-content .es-collagen__item--12 {
     top: 60%;
-    left: 21%;
+    left: 15%;
   }
   #es-rc #es-rc-content .es-collagen__item--13 {
     top: 49%;
-    left: 24%;
+    left: 19%;
   }
   #es-rc #es-rc-content .es-collagen__item--14 {
     top: 36%;
-    left: 23%;
+    left: 18%;
   }
   #es-rc #es-rc-content .es-collagen__item--15 {
     top: 26%;
-    left: 26%;
+    left: 21%;
   }
   #es-rc #es-rc-content .es-collagen__item--16 {
-    top: 18%;
-    left: 34%;
+    top: 19%;
+    left: 30%;
   }
   #es-rc #es-rc-content .es-routine__title {
     padding-left: 20px;
@@ -1452,10 +1454,10 @@ body {
     margin-left: 20%;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1241px) {
   #es-rc #es-rc-content .es-header__right {
-    max-width: 260px;
-    margin-right: -10px;
+    max-width: 236px;
+    margin-right: 0px;
   }
   #es-rc #es-rc-content .es-header__title {
     letter-spacing: 0.4em;
@@ -1466,7 +1468,7 @@ body {
     gap: 0;
   }
   #es-rc #es-rc-content .es-compare__single {
-    min-width: 240px;
+    min-width: 175px;
   }
   #es-rc #es-rc-content .es-compare__single-image {
     min-height: 180px;
@@ -1480,16 +1482,16 @@ body {
     margin-bottom: 50px;
   }
   #es-rc #es-rc-content .es-compare__type-subtitle, #es-rc #es-rc-content .es-compare__problem-subtitle, #es-rc #es-rc-content .es-compare__action-subtitle, #es-rc #es-rc-content .es-compare__effect-subtitle, #es-rc #es-rc-content .es-compare__consistency-subtitle {
-    font-size: 14px;
+    font-size: 12px;
     padding-right: 30px;
     padding-left: 30px;
   }
   #es-rc #es-rc-content .es-collagen__ba-group {
-    bottom: 11%;
+    bottom: 4%;
     left: 3%;
   }
   #es-rc #es-rc-content .es-collagen__disclaimer {
-    bottom: 4%;
+    bottom: 1%;
     left: 3%;
   }
   #es-rc #es-rc-content .es-routine {
@@ -1500,7 +1502,7 @@ body {
     margin-top: 30px;
     position: absolute;
     top: 0px;
-    right: 7%;
+    right: 2%;
     gap: 45px;
   }
   #es-rc #es-rc-content .es-routine__step-item-title {
@@ -1517,10 +1519,10 @@ body {
     right: -25px;
   }
   #es-rc #es-rc-content .es-routine__step-item-title--big-2 {
-    right: 22px;
+    right: 0px;
   }
   #es-rc #es-rc-content .es-routine__step-item-title--big-3 {
-    right: 30px;
+    right: 7px;
   }
   #es-rc #es-rc-content .es-routine__step-item-subtitle {
     margin-top: -10px;
