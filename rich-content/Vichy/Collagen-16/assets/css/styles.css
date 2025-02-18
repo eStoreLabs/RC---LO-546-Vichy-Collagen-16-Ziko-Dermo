@@ -909,11 +909,11 @@ body {
     left: 73%;
   }
   #es-rc #es-rc-content .es-collagen__item--8 {
-    top: 85%;
+    top: 88%;
     left: 60%;
   }
   #es-rc #es-rc-content .es-collagen__item--9 {
-    top: 89%;
+    top: 92%;
     left: 44%;
   }
   #es-rc #es-rc-content .es-collagen__item--10 {
@@ -953,7 +953,7 @@ body {
     display: block;
   }
   #es-rc #es-rc-content .es-ba__img {
-    max-width: 600px;
+    max-width: 95%;
   }
   #es-rc #es-rc-content .es-ba__label {
     right: 5%;
@@ -984,6 +984,10 @@ body {
   }
 }
 @media screen and (min-width: 600px) {
+  #es-rc #es-rc-content .swiper-pagination {
+    display: none;
+  }
+
   #es-rc #es-rc-content .es-slick-carousel--mobile,
   #es-rc #es-rc-content .slick-button-prev,
   #es-rc #es-rc-content .slick-button-next,
